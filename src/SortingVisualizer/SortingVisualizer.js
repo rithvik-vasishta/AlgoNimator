@@ -6,6 +6,7 @@ import {getQuickSortAnimations} from '../SortingAlgorithms/QuickSort';
 import {getInsertionSortAnimations} from '../SortingAlgorithms/InsertionSort';
 import {getSelectionSortAnimations} from '../SortingAlgorithms/SelectionSort';
 import {getBubbleSortAnimations} from '../SortingAlgorithms/BubbleSort';
+import '../App.css'
 //Changing width,height accordingly with the browser
 let WINDOW_WIDTH = window.innerWidth;
 let WINDOW_HEIGHT = window.innerHeight;
@@ -281,6 +282,44 @@ class SortingVisualizer extends React.Component {
         const TOTAL_BUTTONS = 1 + SORT_BUTTONS;
         return(
             <>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                  <a class="navbar-brand" href="/">Algonimator</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="/">Home </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/sorting">Visualizer<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" title="Generate Random Array" href="#" onClick={() => this.resetArray()}>Generate New Array</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Algorithm Selection
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" id="mergeSort" href="#" title="O(NlogN) Time Complexity" onClick={() => this.mergeSort()}>Merge Sort</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" id="quickSort" href="#" title="O(NlogN) Time Complexity" onClick={() => this.quickSort()}>Quick Sort</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" id="bubbleSort" href="#" title="O(N^2) Time Complexity" onClick={() => this.bubbleSort()}>Bubble Sort</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" id="insertionSort" href="#" title="O(N^2) Time Complexity" onClick={() => this.insertionSort()}>Insertion Sort</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" id="heapSort" href="#" title="O(NlogN) Time Complexity" onClick={() => this.heapSort()}>Heap Sort</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" id="selectionSort" href="#" title="O(N^2) Time Complexity" onClick={() => this.selectionSort()}>Selection Sort</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
             <div className="array-container" style={{position:'absolute', right:`20px`}}>
                 {array.map((value, idx) => (
                     <div
@@ -292,30 +331,7 @@ class SortingVisualizer extends React.Component {
                         }}
                     ></div>
                 ))}
-            </div>
-            <div className="buttons" > 
-                <button title="Generates a new random array" style={{position:'relative',top:`${0*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.resetArray()}>
-                    Generate New Array
-                </button>
-                <button title="O(NlogN) Time Complexity" id = "mergeSort" style={{position:'relative',top:`${0.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.mergeSort()}>
-                    Merge Sort
-                </button>
-                <button title="O(N^2) Time Complexity" id = "quickSort" style={{position:'relative',top:`${1.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.quickSort()}>
-                    Quick Sort
-                </button>
-                <button title="O(N^2) Time Complexity" id = "bubbleSort" style={{position:'relative',top:`${2.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.bubbleSort()}>
-                    Bubble Sort
-                </button>
-                <button title="O(N^2) Time Complexity" id = "insertionSort" style={{position:'relative',top:`${3.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.insertionSort()}>
-                    Insertion Sort
-                </button>
-                <button title="O(NlogN) Time Complexity" id = "heapSort" style={{position:'relative',top:`${4.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.heapSort()}>
-                    Heap Sort
-                </button>
-                <button title="O(N^2) Time Complexity" id = "selectionSort" style={{position:'relative',top:`${5.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.selectionSort()}>
-                    Selection Sort
-                </button>
-            </div>    
+            </div> 
             </>
         );
     }
