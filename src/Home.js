@@ -19,12 +19,6 @@ class Home extends Component{
           <li class="nav-item">
             <a class="nav-link" href="/sorting">Visualizer</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/sorting" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Algorithm Selection</a>
-          </li>
         </ul>
       </div>
     </nav>
