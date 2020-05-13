@@ -1,7 +1,50 @@
 import React, { Component } from 'react';
+import { Link, withRouter} from 'react-router-dom'
 
 class Home extends Component{
+  logOut(e){
+    e.preventDefault()
+    localStorage.removeItem('usertoken')
+    this.props.history.push('/')
+  }
+
+
 	render(){
+    const loginRegLink = (
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link to="/login" className="nav-link">
+            Login
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/register" className="nav-link">
+            Register
+          </Link>
+        </li>
+      </ul>
+    )
+
+    const userLink = (
+      <ul className="navbar-nav">
+          <li class="nav-item">
+            <Link to="/sorting" class="nav-link" >Visualizer</Link>
+          </li>
+        <li className="nav-item">
+          <Link to="/profile" className="nav-link">
+            User
+          </Link>
+        </li>
+        <li className="nav-item">
+          <a href="" onClick={this.logOut.bind(this)} className="nav-link">
+            Logout
+          </a>
+        </li>
+      </ul>
+    )
+
+
+
 		return(
 <>
 
@@ -14,12 +57,10 @@ class Home extends Component{
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/sorting">Visualizer</a>
+            <Link to="/" class="nav-link">Home <span class="sr-only">(current)</span></Link>
           </li>
         </ul>
+        {localStorage.usertoken ? userLink : loginRegLink}
       </div>
     </nav>
 
@@ -76,4 +117,4 @@ class Home extends Component{
 	}
 }
 
-export default Home
+export default withRouter(Home)
