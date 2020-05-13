@@ -68,7 +68,7 @@ class Home extends Component{
       <div class="jumbotron">
         <div class="container">
           <h1 class="display-3"><strong>Welcome to Algonimator</strong></h1>
-          <p>This is a portal where you can understand Algorithms in very fun way. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+          <p>Algorithm Visualizer is an interactive online platform that visualizes algorithms from code. Learning an algorithm gets much easier with visualizing it. Don't get what we mean? Check it out</p>
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
         </div>
       </div>
@@ -77,25 +77,25 @@ class Home extends Component{
         <div class="row">
           <div class="col-md-3">
           	<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" />
-            <h2>Heading</h2>
+            <h2>Somandra Singh Rathore</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
           </div>
           <div class="col-md-3">
           	<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" />
-            <h2>Heading</h2>
+            <h2>Rithvik Vashishta</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
           </div>
           <div class="col-md-3">
           	<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" />
-            <h2>Heading</h2>
+            <h2>Yash Singh Chouhan</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
           </div>
           <div class="col-md-3">
           	<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" />
-            <h2>Heading</h2>
+            <h2>Utkarsha Verma</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
           </div>
