@@ -294,9 +294,6 @@ class SortingVisualizer extends React.Component {
                         <a class="nav-link" href="/">Home </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/sorting">Visualizer<span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
                         <a class="nav-link" title="Generate Random Array" href="#" onClick={() => this.resetArray()}>Generate New Array</a>
                       </li>
                       <li class="nav-item dropdown">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
+import { Link, withRouter} from 'react-router-dom'
 
 class Profile extends Component {
   constructor() {
@@ -25,6 +26,20 @@ class Profile extends Component {
   render() {
     return (
       <div className="container">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="/">Algonimator</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <Link to="/" class="nav-link">Home <span class="sr-only">(current)</span></Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div className="jumbotron mt-5">
           <div className="col-sm-8 mx-auto">
             <h1 className="text-center">PROFILE</h1>
