@@ -108,7 +108,8 @@ class Home extends Component{
     </main>
 
     <footer class="container">
-      <p>© AlgoNimator 2019-2020</p>
+      <p>© AlgoNimator 2019-2020</p>      
+      
     </footer>
   
 

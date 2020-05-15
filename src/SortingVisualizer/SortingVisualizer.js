@@ -69,11 +69,7 @@ class SortingVisualizer extends React.Component {
         buttonStyle.cursor = "default";
         buttonStyle.background = "#000000";
 
-        document.getElementById("heapSort").disabled = true;
-        buttonStyle = document.getElementById("heapSort").style;
-        document.getElementById("heapSort").title = DISABLED_BUTTON;
-        buttonStyle.cursor = "default";
-        buttonStyle.background = "#000000";
+        
 
         document.getElementById("selectionSort").disabled = true;
         buttonStyle = document.getElementById("selectionSort").style;
@@ -118,11 +114,7 @@ class SortingVisualizer extends React.Component {
         buttonStyle.background = "#47535E";
         buttonStyle.cursor = "pointer";
 
-        document.getElementById("heapSort").disabled = false;
-        buttonStyle = document.getElementById("heapSort").style;
-        document.getElementById("heapSort").title = ENABLED_BUTTON.nlogn;
-        buttonStyle.background = "#47535E";
-        buttonStyle.cursor = "pointer";
+        
     }
     //Sorting Algorithms
     mergeSort() {
@@ -309,7 +301,7 @@ class SortingVisualizer extends React.Component {
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" id="insertionSort" href="#" title="O(N^2) Time Complexity" onClick={() => this.insertionSort()}>Insertion Sort</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" id="heapSort" href="#" title="O(NlogN) Time Complexity" onClick={() => this.heapSort()}>Heap Sort</a>
+                          
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" id="selectionSort" href="#" title="O(N^2) Time Complexity" onClick={() => this.selectionSort()}>Selection Sort</a>
                         </div>
